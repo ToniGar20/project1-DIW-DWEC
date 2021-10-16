@@ -40,5 +40,5 @@ function deleteLastChar(){
 }
 
 function deleteAllChars(){
-
+    document.getElementById("message").innerHTML = "";
 }
