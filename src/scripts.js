@@ -20,12 +20,25 @@ function toUpperCaseButton(){
 }
 
 function newChar(value){
-
     if(upperCase) {
         value = value.toUpperCase();
         document.getElementById("message").innerHTML += value;
     } else{
         document.getElementById("message").innerHTML += value;
     }
+}
+
+function deleteLastChar(){
+    let currentMessageValue = document.getElementById("message").innerHTML
+    if (currentMessageValue.length >= 1){
+        let newChain = currentMessageValue.split("");
+        newChain.pop();
+        document.getElementById("message").innerHTML = newChain.join("");
+    } else {
+        return;
+    }
+}
+
+function deleteAllChars(){
 
 }
