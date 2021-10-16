@@ -29,7 +29,7 @@ function newChar(value){
 }
 
 function deleteLastChar(){
-    let currentMessageValue = document.getElementById("message").innerHTML
+    let currentMessageValue = document.getElementById("message").innerHTML;
     if (currentMessageValue.length >= 1){
         let newChain = currentMessageValue.split("");
         newChain.pop();
@@ -41,4 +41,8 @@ function deleteLastChar(){
 
 function deleteAllChars(){
     document.getElementById("message").innerHTML = "";
+}
+
+function addLineBreak(){
+    document.getElementById("message").innerHTML += "<br>";
 }
