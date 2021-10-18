@@ -12,7 +12,7 @@
 
 /* Profile top bar */
 
-.profile-box{
+.profile-box {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 1fr;
@@ -24,11 +24,11 @@
     z-index: 1;
 }
 
-.other-data-container{
+.other-data-container {
     display: grid;
 }
 
-.profile-image img{
+.profile-image img {
     display: grid;
     border-radius: 50%;
     width: 80%;
@@ -43,7 +43,7 @@
     margin-left: 4%;
 }
 
-.profile-status{
+.profile-status {
     display: grid;
     grid-template-columns: 3% 97%;
     grid-template-rows: 1fr;
@@ -54,7 +54,7 @@
     margin-bottom: 2%;
 }
 
-.status-point{
+.status-point {
     display: grid;
     justify-content: left;
     width: 110%;
@@ -64,7 +64,7 @@
 
 }
 
-.status-text{
+.status-text {
     display: grid;
     justify-content: left;
     align-items: center;
@@ -73,7 +73,7 @@
 
 /* Message displaying area */
 
-.display-box{
+.display-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,14 +85,47 @@
     background-size: 485px;
 }
 
-.text-area{
+.text-area {
+    display: flex;
+    justify-content: right;
     height: 85%;
     width: 100%;
+}
+
+.current-day{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: lightyellow;
+    font-family: "Roboto Thin";
+    width: 30%;
+    height: 5%;
+}
+
+.message-sent {
+    display: flex;
+    justify-items: right;
+    flex-wrap: wrap;
+    background-color: lightgreen;
+    max-height: 10%;
+
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message-sent .timestamp{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
-.message-area{
+/* Message area: general box, input and button */
+
+.message-area {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -108,18 +141,18 @@
     width: 100%;
     align-items: center;
     border-radius: 25px;
-    background-color: white;
+    background-color: rebeccapurple;
     overflow: hidden;
 }
 
-#message{
+#message {
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
     flex-wrap: wrap;
 }
 
-.message-area .send{
+.message-area .send {
     display: flex;
     background: url("https://w7.pngwing.com/pngs/856/257/png-transparent-computer-icons-button-tak-products-services-co-ltd-sales-office-icon-design-send-angle-triangle-grass-thumbnail.png") no-repeat;
     background-size: cover;
@@ -131,7 +164,7 @@
 
 /* Keyboard */
 
-.keyboard{
+.keyboard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -140,24 +173,24 @@
 
 }
 
-.kb-row-1{
+.kb-row-1 {
     display: flex;
     justify-content: space-between;
 }
-.kb-row-2{
+.kb-row-2 {
     display: flex;
     justify-content: space-between;
 
 }
-.kb-row-3{
+.kb-row-3 {
     display: flex;
     justify-content: space-between;
 }
-.kb-row-4{
+.kb-row-4 {
     display: flex;
 }
 
-.normal-key{
+.normal-key {
     display: flex;
     flex-basis: 100%;
     font-size: 15px;
