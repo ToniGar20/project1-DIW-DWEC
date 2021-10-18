@@ -108,8 +108,9 @@
     justify-items: right;
     flex-wrap: wrap;
     background-color: lightgreen;
-    max-height: 10%;
-
+    min-height: 10%;
+    margin-right: 3%;
+    margin-top: 3%;
 }
 
 .text {
