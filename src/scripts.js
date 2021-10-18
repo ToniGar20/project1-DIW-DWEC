@@ -44,5 +44,26 @@ function deleteAllChars(){
 }
 
 function addLineBreak(){
-    document.getElementById("message").innerHTML += "<br>";
+    document.getElementById("message").innerHTML += `</br>`;
 }
+
+function sendMessage(){
+    // Building the message
+    let currentMessage = document.getElementById("message").innerHTML;
+    let newDivContent = document.createTextNode(currentMessage);
+    let newDiv = document.createElement("div")
+    newDiv.classList.add("message-sent");
+    newDiv.appendChild(newDivContent);
+    document.getElementById("text-content").appendChild(newDiv);
+    document.getElementById("message").innerHTML = "";
+
+    //Building the timestamp
+    let now = new Date();
+    const months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+    let dateNow = now.getDate() + " de " +  months[now.getMonth()];
+    let timeNow = now.getHours() + ":" + now.getMinutes();
+
+
+
+}
+

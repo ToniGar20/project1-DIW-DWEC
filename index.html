@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test template</title>
     <link rel="stylesheet" type="text/css" href="src/styles.css"/>
-    <script src="src/scripts.js"></script>
+    <script src="src/scripts.js" defer></script>
 </head>
 
 <body>
     <div class="mobile">
         <div class="profile-box">
             <div class="profile-image">
-                <img src="https://media-exp1.licdn.com/dms/image/C5603AQEm5vKceBgQMw/profile-displayphoto-shrink_800_800/0/1517411326713?e=1639612800&v=beta&t=GPqkrHSf-I2k0tt4-mn6w8GvKbXg-xEYRhAaXmmZZwo" alt="ToniGarcia"/>
+                <img src="src/images/profile-img.png" alt="ToniGarcia"/>
             </div>
             <div class="other-data-container">
                 <div class="profile-name">Toni García</div>
@@ -23,13 +23,19 @@
             </div>
         </div>
         <div class="display-box">
-            <div class="text-box">
-
+            <div class="text-area" id="text-content">
+                <div class="message-sent">
+                    <p class="text">Hola Toni, ¿cómo va?</p>
+                    <p class="timestamp">timestamp</p>
+                    <img class=double-check src="src/images/double-check-message.png">
+                </div>
             </div>
-        </div>
-        <div class="message-area">
-            <div class="message-box" id="message"></div>
-            <button class="send"></button>
+            <div class="message-area">
+                <div class="message-box">
+                    <div id="message"></div>
+                </div>
+                <button class="send" onclick="sendMessage()"></button>
+            </div>
         </div>
         <div class="keyboard">
             <div class="kb-row-1">

@@ -7,6 +7,7 @@
     justify-content: center;
     align-content: center;
     grid-gap: 1px;
+    height:100vh;
 }
 
 /* Profile top bar */
@@ -28,9 +29,9 @@
 }
 
 .profile-image img{
+    display: grid;
     border-radius: 50%;
     width: 80%;
-    display: grid;
     height: 80%;
     margin: 11% 0 0 15%;
 }
@@ -74,33 +75,53 @@
 
 .display-box{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
+    /*
     background: url("https://www.wallpapertip.com/wmimgs/5-55896_wallpaper-background-whatsapp-default-dark-whatsapp-dark-wallpaper.jpg") no-repeat;
+     */
     background-size: 485px;
 }
 
+.text-area{
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
 
-/* Message writing area */
 
 .message-area{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-end;
+    height: 9%;
+    width: 95%;
+
 }
 
 .message-box {
     display: flex;
-    width: 80%;
+    background-color: white;
     justify-content: left;
+    width: 100%;
     align-items: center;
-    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
     overflow: hidden;
 }
 
+#message{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
+}
+
 .message-area .send{
-    background: url("https://static.thenounproject.com/png/1054386-200.png") no-repeat;
+    display: flex;
+    background: url("https://w7.pngwing.com/pngs/856/257/png-transparent-computer-icons-button-tak-products-services-co-ltd-sales-office-icon-design-send-angle-triangle-grass-thumbnail.png") no-repeat;
     background-size: cover;
     width: 11%;
     border-radius: 60%;
