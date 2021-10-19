@@ -48,21 +48,30 @@ function addLineBreak(){
 }
 
 function sendMessage(){
-    // Building the message
+
+    //Creating main containers and elements for HTML
+    let divMessageSent = document.createElement("div").classList.add("message-sent");
+    let pText = document.createElement("p").classList.add("text");
+    let pTimestamp = document.createElement("p").classList.add("timestamp");
+
+    //Building the text message
     let currentMessage = document.getElementById("message").innerHTML;
-    let newDivContent = document.createTextNode(currentMessage);
-    let newDiv = document.createElement("div")
-    newDiv.classList.add("message-sent");
-    newDiv.appendChild(newDivContent);
-    document.getElementById("text-content").appendChild(newDiv);
-    document.getElementById("message").innerHTML = "";
+    let newPText = document.createTextNode(currentMessage);
+    pText.appendChild(newPText);
+    divMessageSent.appendChild(pText);
 
     //Building the timestamp
     let now = new Date();
+    let timeNow = now.getHours() + ":" + now.getMinutes();
+    pTimestamp.appendChild(timeNow);
+    divMessageSent.appendChild(pTimestamp);
+
+    //Building the day of send
     const months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
     let dateNow = now.getDate() + " de " +  months[now.getMonth()];
-    let timeNow = now.getHours() + ":" + now.getMinutes();
 
+    //Building DOM order for elements
+    document.getElementById("text-content").appendChild(divMessageSent);
 
 
 }
