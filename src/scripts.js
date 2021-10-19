@@ -50,20 +50,26 @@ function addLineBreak(){
 function sendMessage(){
 
     //Creating main containers and elements for HTML
-    let divMessageSent = document.createElement("div").classList.add("message-sent");
-    let pText = document.createElement("p").classList.add("text");
-    let pTimestamp = document.createElement("p").classList.add("timestamp");
+    let divMessageSent = document.createElement("div");
+    divMessageSent.classList.add("message-sent");
+    let pText = document.createElement("p");
+    pText.classList.add("text");
+    let pTimestamp = document.createElement("p");
+    pTimestamp.classList.add("timestamp");
 
     //Building the text message
     let currentMessage = document.getElementById("message").innerHTML;
     let newPText = document.createTextNode(currentMessage);
+    console.log(pText);
+    console.log(newPText);
     pText.appendChild(newPText);
     divMessageSent.appendChild(pText);
 
     //Building the timestamp
     let now = new Date();
     let timeNow = now.getHours() + ":" + now.getMinutes();
-    pTimestamp.appendChild(timeNow);
+    let newTimeNow = document.createTextNode(timeNow);
+    pTimestamp.appendChild(newTimeNow);
     divMessageSent.appendChild(pTimestamp);
 
     //Building the day of send
@@ -73,6 +79,8 @@ function sendMessage(){
     //Building DOM order for elements
     document.getElementById("text-content").appendChild(divMessageSent);
 
+    //Cleaning the input after sending message
+    document.getElementById("message").innerHTML = "";
 
 }
 
