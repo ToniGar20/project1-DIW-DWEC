@@ -81,8 +81,7 @@
     justify-content: center;
     align-items: center;
     border: 2px solid black;
-    /* TODO 2: Download image and store it in folder */
-    background: url("https://www.wallpapertip.com/wmimgs/5-55896_wallpaper-background-whatsapp-default-dark-whatsapp-dark-wallpaper.jpg") no-repeat;
+    background: url("images/main-background.jpg") no-repeat;
     background-size: 485px;
 
 }
@@ -177,8 +176,7 @@
 
 .message-area .send {
     display: flex;
-    /* TODO 3: Download image and store it in folder */
-    background: url("https://w7.pngwing.com/pngs/856/257/png-transparent-computer-icons-button-tak-products-services-co-ltd-sales-office-icon-design-send-angle-triangle-grass-thumbnail.png") no-repeat;
+    background: url("images/send-triangle.png") no-repeat;
     background-size: cover;
     width: 9%;
     border-radius: 60%;
