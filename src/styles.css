@@ -1,4 +1,6 @@
+/* TODO 1: Check for not used CSS attributes */
 
+/* TODO 4: Fix the main structure to dont have dependence on section sizes */
 .mobile {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
@@ -79,6 +81,7 @@
     justify-content: center;
     align-items: center;
     border: 2px solid black;
+    /* TODO 2: Download image and store it in folder */
     background: url("https://www.wallpapertip.com/wmimgs/5-55896_wallpaper-background-whatsapp-default-dark-whatsapp-dark-wallpaper.jpg") no-repeat;
     background-size: 485px;
 
@@ -174,6 +177,7 @@
 
 .message-area .send {
     display: flex;
+    /* TODO 3: Download image and store it in folder */
     background: url("https://w7.pngwing.com/pngs/856/257/png-transparent-computer-icons-button-tak-products-services-co-ltd-sales-office-icon-design-send-angle-triangle-grass-thumbnail.png") no-repeat;
     background-size: cover;
     width: 9%;
@@ -184,6 +188,7 @@
 
 /* Keyboard */
 
+/* TODO 7: keyboard overflows his space */
 .keyboard {
     display: flex;
     flex-wrap: wrap;

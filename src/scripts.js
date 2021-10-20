@@ -1,4 +1,6 @@
 let upperCase = false;
+
+//TODO 8: ehance the button: different behaviour with 1 or 2 clicks
 function toUpperCaseButton(){
     if(upperCase){
         upperCase = false;
@@ -72,9 +74,11 @@ function sendMessage(){
     pTimestamp.appendChild(newTimeNow);
     divMessageSent.appendChild(pTimestamp);
 
+    //TODO 4: Conditional required: just draw the day once.
     //Building the day of send
     const months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
     let dateNow = now.getDate() + " de " +  months[now.getMonth()];
+    //TODO 5: Send the content to he HTML
 
     //Building DOM order for elements
     document.getElementById("text-content").appendChild(divMessageSent);
