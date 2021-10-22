@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 450px;
-    grid-template-rows: 80px 500px 200px;
+    grid-template-rows: 75px 550px 200px;
     justify-content: center;
 }
 
@@ -29,9 +29,9 @@
 .profile-image img {
     display: grid;
     border-radius: 50%;
-    width: 75%;
+    width: 70%;
     height: 80%;
-    margin: 11% 0 0 15%;
+    margin: 8% 0 0 25%;
 }
 
 .profile-name {
@@ -154,6 +154,17 @@
     margin-top: 2%;
 }
 
+.emoji {
+    display: flex;
+    font-size: 28px;
+    width: 60px;
+    background-size: cover;
+    background-color: rgb(77,182,172);
+    border-radius: 60%;
+    cursor: pointer;
+    margin-right: 3%;
+}
+
 .message-box {
     display: flex;
     background-color: white;
@@ -173,12 +184,12 @@
 
 .message-area .send {
     display: flex;
-    background: url("images/send-triangle.png") no-repeat;
+    background: url(images/send-triangle.png) no-repeat;
     background-size: cover;
-    width: 9%;
+    width: 62px;
     border-radius: 60%;
     cursor: pointer;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 /* Keyboard */
@@ -215,7 +226,8 @@
     flex-basis: 44px;
     font-size: 15px;
     text-align: center;
-    height: 10px;
+    width: 40px;
+    height: 40px;
     line-height: 0;
     padding: 19px 15px;
     background: #2A2A3A;
