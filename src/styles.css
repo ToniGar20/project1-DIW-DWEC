@@ -201,7 +201,6 @@
     justify-content: center;
     background: grey;
     align-items: center;
-
 }
 
 .kb-row-1 {
@@ -226,7 +225,7 @@
     flex-basis: 44px;
     font-size: 15px;
     text-align: center;
-    width: 40px;
+    width: 45px;
     height: 40px;
     line-height: 0;
     padding: 19px 15px;
@@ -234,7 +233,10 @@
     color: #aaa;
     box-shadow: 0px 5px 0px 0em black;
     cursor: pointer;
+}
 
+.normal-key:hover{
+    background:mediumseagreen;
 }
 
 .special-key {

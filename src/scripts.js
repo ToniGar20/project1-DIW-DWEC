@@ -97,6 +97,15 @@ function sendMessage(){
 
     //Cleaning the input after sending message
     document.getElementById("message").innerHTML = "";
+}
 
+function keyboardChange(keyboard){
+    if(keyboard === "keyboard2"){
+        document.getElementById("keyboard1").style.display = "none";
+        document.getElementById("keyboard2").style.display = "flex";
+    } else if (keyboard === "keyboard1"){
+        document.getElementById("keyboard1").style.display = "flex";
+        document.getElementById("keyboard2").style.display = "none";
+    }
 }
 
