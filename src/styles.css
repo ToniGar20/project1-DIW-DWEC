@@ -1,15 +1,11 @@
 /* TODO 1: Check for not used CSS attributes */
 
-/* TODO 4: Fix the main structure to dont have dependence on section sizes */
 .mobile {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 450px;
-    grid-template-rows: 2.5fr 15fr 1.5fr 6fr;
+    grid-template-rows: 80px 500px 200px;
     justify-content: center;
-    align-content: center;
-    grid-gap: 1px;
-    height:100vh;
 }
 
 /* Profile top bar */
@@ -192,8 +188,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: grey;
     align-items: center;
-    border: 2px solid black;
 
 }
 
@@ -216,19 +212,32 @@
 
 .normal-key {
     display: flex;
+    flex-basis: 44px;
+    font-size: 15px;
+    text-align: center;
+    height: 10px;
+    line-height: 0;
+    padding: 19px 15px;
+    background: #2A2A3A;
+    color: #aaa;
+    box-shadow: 0px 5px 0px 0em black;
+    cursor: pointer;
+
+}
+
+.special-key {
+    display: flex;
     flex-basis: 100%;
     font-size: 15px;
     text-align: center;
     height: 10px;
     line-height: 0;
-    margin: 2px;
-    padding: 20px 15px;
-
-    background: #2a2a2a;
-    color: #aaa;
-    box-shadow: 0 0 0 0.05em black;
+    /* margin: 2px; */
+    padding: 20px 12px;
+    background: rgb(77,182,172);
+    color: black;
+    box-shadow: 0px 3px 0px 0em black;
     cursor: pointer;
-
 }
 
 .space {
@@ -236,5 +245,3 @@
     flex-grow: 1;
     padding: 20px 75px;
 }
-
-

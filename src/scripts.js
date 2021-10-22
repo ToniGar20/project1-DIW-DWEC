@@ -8,20 +8,12 @@ function toUpperCaseButton(value){
         if(upperCase) {
             document.getElementById("mays-button").style.backgroundColor = "orange";
             allChars[i].style.textTransform = 'uppercase';
-            upperCase = true;
         } else {
             document.getElementById("mays-button").style.backgroundColor = "white";
             allChars[i].style.textTransform = 'lowercase';
-            upperCase = false;
         }
     }
-    if (value==="double"){
-        return upperCase = true;
-    } else {
-        return upperCase;
-    }
 }
-
 
 function newChar(value){
     if(upperCase) {
