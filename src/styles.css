@@ -221,7 +221,6 @@ body {
 
 .normal-key {
     display: flex;
-    flex-basis: 44px;
     font-size: 15px;
     text-align: center;
     width: 45px;
@@ -240,7 +239,6 @@ body {
 
 .special-key {
     display: flex;
-    flex-basis: 100%;
     font-size: 15px;
     text-align: center;
     height: 10px;
@@ -257,4 +255,10 @@ body {
     display: flex;
     flex-grow: 1;
     padding: 20px 75px;
+}
+
+.special-chars-button, .mays-button {
+    width: 50px;
+    align-content: center;
+    justify-content: center;
 }
