@@ -6,9 +6,11 @@ function toUpperCaseButton(value){
     let allChars = document.getElementsByClassName("normal-key");
     for (let i = 0; i < allChars.length; i++) {
         if(upperCase) {
+            document.getElementById("mays-button").style.backgroundColor = "orange";
             allChars[i].style.textTransform = 'uppercase';
             upperCase = true;
         } else {
+            document.getElementById("mays-button").style.backgroundColor = "white";
             allChars[i].style.textTransform = 'lowercase';
             upperCase = false;
         }
