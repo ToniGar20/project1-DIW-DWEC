@@ -66,7 +66,7 @@
             </div>
             <div class="kb-row-3">
                 <!-- TODO: Add dblclick functionality -->
-                <button class="special-key mayusc" onclick="toUpperCaseButton()">May</button>
+                <button class="special-key mayusc" onclick="toUpperCaseButton('single')" ondblclick="toUpperCaseButton('double')">May</button>
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('z')">z</button>
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('x')">x</button>
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('c')">c</button>
@@ -79,13 +79,13 @@
             <div class="kb-row-4"> <!-- TODO 9: add missing keys  -->
                 <button class="special-key" onclick="newChar(',')">,</button>
                 <button class="special-key" onclick="newChar('.')">.</button>
+                <button class="special-key" onclick="deleteLastChar()">&#8592;</button>
+                <button class="special-key" onclick="deleteFirstChar()">&#8594;</button>
                 <button class="special-key space" onclick="newChar(' ')"> </button>
-                <button class="special-key" onclick="deleteLastChar()">C</button>
-                <button class="special-key" onclick="deleteAllChars()">CE</button>
-                <button class="special-key">R</button>
+                <button class="special-key" onclick="deleteAllChars()">C</button>
+                <button class="special-key" onclick="deleteLastWord()">CE</button>
                 <button class="special-key" onclick="addLineBreak()">Ent</button>
             </div>
-
         </div>
     </div>
 

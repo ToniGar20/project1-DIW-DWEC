@@ -1,11 +1,7 @@
 let upperCase = false;
 
-function toUpperCaseButton(){
-    if(upperCase){
-        upperCase = false;
-    } else {
-        upperCase = true;
-    }
+function toUpperCaseButton(value){
+    upperCase = !upperCase; //If variable-value is false, set to false and viceversa
 
     let allChars = document.getElementsByClassName("normal-key");
     for (let i = 0; i < allChars.length; i++) {
@@ -17,8 +13,13 @@ function toUpperCaseButton(){
             upperCase = false;
         }
     }
-    return upperCase;
+    if (value==="double"){
+        return upperCase = true;
+    } else {
+        return upperCase;
+    }
 }
+
 
 function newChar(value){
     if(upperCase) {
@@ -29,14 +30,30 @@ function newChar(value){
     }
 }
 
+function deleteFirstChar(){
+    let currentMessageValue = document.getElementById("message").innerHTML;
+    if (currentMessageValue.length >= 1){
+        let newChain = currentMessageValue.split("");
+        newChain.shift();
+        document.getElementById("message").innerHTML = newChain.join("");
+    }
+}
+
 function deleteLastChar(){
     let currentMessageValue = document.getElementById("message").innerHTML;
     if (currentMessageValue.length >= 1){
         let newChain = currentMessageValue.split("");
         newChain.pop();
         document.getElementById("message").innerHTML = newChain.join("");
-    } else {
-        return;
+    }
+}
+
+function deleteLastWord(){
+    let currentMessageValue = document.getElementById("message").innerHTML;
+    if (currentMessageValue.length >= 1){
+        let newChain = currentMessageValue.split(" ");
+        newChain.pop();
+        document.getElementById("message").innerHTML = newChain.join(" ");
     }
 }
 
