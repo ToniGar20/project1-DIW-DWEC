@@ -16,7 +16,7 @@ function toUpperCaseButton(value){
 }
 
 function newChar(value){
-    if(upperCase) {
+    if (upperCase) {
         value = value.toUpperCase();
         document.getElementById("message").innerHTML += value;
     } else{
@@ -60,7 +60,6 @@ function addLineBreak(){
 }
 
 function sendMessage(){
-
     //Creating main containers and elements for HTML
     let divMessageSent = document.createElement("div");
     divMessageSent.classList.add("message-sent");
@@ -71,33 +70,40 @@ function sendMessage(){
 
     //Building the text message
     let currentMessage = document.getElementById("message").innerHTML;
-    currentMessage = currentMessage.replace("<br>","\n");
-    let newPText = document.createTextNode(currentMessage);
-    pText.appendChild(newPText);
-    divMessageSent.appendChild(pText);
+    if (currentMessage !== '') {
+            //if (currentMessage !== null)
+            currentMessage = currentMessage.replace("<br>", "\n");
+            let newPText = document.createTextNode(currentMessage);
+            pText.appendChild(newPText);
+            divMessageSent.appendChild(pText);
 
-    //Building the timestamp
-    let now = new Date();
-    let timeNow = now.getHours() + ":" + now.getMinutes();
-    let newTimeNow = document.createTextNode(timeNow);
-    pTimestamp.appendChild(newTimeNow);
-    divMessageSent.appendChild(pTimestamp);
+            //Building the timestamp
+            let now = new Date();
+            let timeNow = now.getHours() + ":" + now.getMinutes();
+            let newTimeNow = document.createTextNode(timeNow);
+            pTimestamp.appendChild(newTimeNow);
+            divMessageSent.appendChild(pTimestamp);
 
-    //TODO 4: Conditional required: just draw the day once.
-    //Building the day of send
-    const months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
-    let dateNow = now.getDate() + " de " +  months[now.getMonth()];
+            //TODO 4: Conditional required: just draw the day once.
+            //Building the day of send
+            const months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+            let dateNow = now.getDate() + " de " + months[now.getMonth()];
+            console.log(dateNow);
 
+            //TODO 5: Send the content to he HTML
+            //Building DOM order for elements
+            document.getElementById("text-content").appendChild(divMessageSent);
 
-    console.log(dateNow);
-
-    //TODO 5: Send the content to he HTML
-    //Building DOM order for elements
-    document.getElementById("text-content").appendChild(divMessageSent);
-
-    //Cleaning the input after sending message
-    document.getElementById("message").innerHTML = "";
+            //Cleaning the input after sending message
+            document.getElementById("message").innerHTML = "";
+    }
 }
+
+// Function to scroll up automatically when new message is added
+window.setInterval(function() {
+    let elem = document.getElementById('text-content');
+    elem.scrollTop = elem.scrollHeight;
+});
 
 function keyboardChange(keyboard){
     if(keyboard === "keyboard2"){
@@ -108,4 +114,3 @@ function keyboardChange(keyboard){
         document.getElementById("keyboard2").style.display = "none";
     }
 }
-
