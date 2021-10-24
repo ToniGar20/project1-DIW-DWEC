@@ -81,6 +81,8 @@ function sendMessage(){
             let minutesFixed;
             if(now.getMinutes() >= 0 && now.getMinutes() <= 9){
                 minutesFixed = "0" + now.getMinutes();
+            } else{
+                minutesFixed = now.getMinutes();
             }
             let timeNow = now.getHours() + ":" + minutesFixed;
             let newTimeNow = document.createTextNode(timeNow);
