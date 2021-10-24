@@ -1,27 +1,45 @@
 let upperCase = false;
+let typeOfClick;
 
 function toUpperCaseButton(value){
     upperCase = !upperCase; //If variable-value is false, set to false and viceversa
+    value === "single" ? typeOfClick = "single" : typeOfClick = "double";
 
     let allChars = document.getElementsByClassName("normal-key");
     for (let i = 0; i < allChars.length; i++) {
         if(upperCase) {
-            document.getElementById("case-button").style.backgroundColor = "orange";
             allChars[i].style.textTransform = 'uppercase';
+            if (typeOfClick === "single"){
+                document.getElementById("case-button").style.backgroundColor = "rgb(255,228,181)";
+            } else {
+                document.getElementById("case-button").style.backgroundColor = "orange";
+            }
         } else {
-            document.getElementById("case-button").style.backgroundColor = "white";
             allChars[i].style.textTransform = 'lowercase';
+            document.getElementById("case-button").style.backgroundColor = "rgb(77,182,172)";
         }
     }
+    return typeOfClick;
 }
 
 function newChar(value){
     if (upperCase) {
         value = value.toUpperCase();
         document.getElementById("message").innerHTML += value;
+        if (typeOfClick === "single"){
+            document.getElementById("case-button").style.backgroundColor = "rgb(77,182,172)";
+            let allChars = document.getElementsByClassName("normal-key");
+            for (let i = 0; i < allChars.length; i++){
+                allChars[i].style.textTransform = 'lowercase';
+            }
+            upperCase = false;
+        } else {
+            upperCase = true;
+        }
     } else{
         document.getElementById("message").innerHTML += value;
     }
+    return upperCase;
 }
 
 function deleteFirstChar(){

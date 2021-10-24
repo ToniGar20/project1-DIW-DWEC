@@ -257,7 +257,11 @@ body {
 }
 
 .special-chars-button, .mays-button {
-    width: 50px;
+    width: 65px;
     align-content: center;
     justify-content: center;
+}
+
+.special-key:hover{
+    background:yellowgreen;
 }
