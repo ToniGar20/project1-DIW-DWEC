@@ -268,8 +268,7 @@ body {
 
 /* MEDIA QUERIES */ /* MADE FOR GALAXY S5 */
 
-@media screen and (max-width: 360px),
-screen and (max-height: 640px) {
+@media screen and (max-width: 360px), screen and (max-height: 640px) {
 
     .mobile {
         display: grid;
@@ -281,6 +280,12 @@ screen and (max-height: 640px) {
     .normal-key{
         width: 35px;
         height: 35px;
+    }
+
+    .mays-button {
+        width: 52px;
+        align-content: center;
+        justify-content: center;
     }
 
 }
