@@ -3,7 +3,7 @@ body {
 }
 
 .mobile {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Helvetica", serif;
     display: grid;
     grid-template-columns: 450px;
     grid-template-rows: 75px 550px 200px;
@@ -264,4 +264,23 @@ body {
 
 .special-key:hover{
     background:yellowgreen;
+}
+
+/* MEDIA QUERIES */ /* MADE FOR GALAXY S5 */
+
+@media screen and (max-width: 360px),
+screen and (max-height: 640px) {
+
+    .mobile {
+        display: grid;
+        grid-template-columns: 360px;
+        grid-template-rows: 60px 400px 190px;
+        justify-content: initial;
+    }
+
+    .normal-key{
+        width: 35px;
+        height: 35px;
+    }
+
 }
