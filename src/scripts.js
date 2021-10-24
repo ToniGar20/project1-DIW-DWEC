@@ -71,7 +71,7 @@ function sendMessage(){
     //Building the text message
     let currentMessage = document.getElementById("message").innerHTML;
     if (currentMessage !== '') {
-            currentMessage = currentMessage.replace("<br>", "\n");
+            currentMessage = currentMessage.replaceAll("<br>", "\n");
             let newPText = document.createTextNode(currentMessage);
             pText.appendChild(newPText);
             divMessageSent.appendChild(pText);
@@ -104,12 +104,6 @@ function sendMessage(){
     }
 }
 
-// Function to scroll up automatically when new message is added
-window.setInterval(function() {
-    let elem = document.getElementById('text-content');
-    elem.scrollTop = elem.scrollHeight;
-});
-
 function keyboardChange(keyboard){
     if(keyboard === "keyboard1"){
         document.getElementById("keyboard1").style.display = "flex";
@@ -125,3 +119,9 @@ function keyboardChange(keyboard){
         document.getElementById("keyboard3").style.display = "flex";
     }
 }
+
+// Function to scroll up automatically when new message is added
+window.setInterval(function() {
+    let elem = document.getElementById('text-content');
+    elem.scrollTop = elem.scrollHeight;
+});
