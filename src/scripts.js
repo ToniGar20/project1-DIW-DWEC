@@ -78,7 +78,11 @@ function sendMessage(){
 
             //Building the timestamp
             let now = new Date();
-            let timeNow = now.getHours() + ":" + now.getMinutes();
+            let minutesFixed;
+            if(now.getMinutes() >= 0 && now.getMinutes() <= 9){
+                minutesFixed = "0" + now.getMinutes();
+            }
+            let timeNow = now.getHours() + ":" + minutesFixed;
             let newTimeNow = document.createTextNode(timeNow);
             pTimestamp.appendChild(newTimeNow);
             divMessageSent.appendChild(pTimestamp);
@@ -105,11 +109,17 @@ window.setInterval(function() {
 });
 
 function keyboardChange(keyboard){
-    if(keyboard === "keyboard2"){
-        document.getElementById("keyboard1").style.display = "none";
-        document.getElementById("keyboard2").style.display = "flex";
-    } else if (keyboard === "keyboard1"){
+    if(keyboard === "keyboard1"){
         document.getElementById("keyboard1").style.display = "flex";
         document.getElementById("keyboard2").style.display = "none";
+        document.getElementById("keyboard3").style.display = "none";
+    } else if (keyboard === "keyboard2"){
+        document.getElementById("keyboard1").style.display = "none";
+        document.getElementById("keyboard2").style.display = "flex";
+        document.getElementById("keyboard3").style.display = "none";
+    } else if (keyboard === "keyboard3"){
+        document.getElementById("keyboard1").style.display = "none";
+        document.getElementById("keyboard2").style.display = "none";
+        document.getElementById("keyboard3").style.display = "flex";
     }
 }

@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="message-area">
-                <button class="emoji" onclick="">😀</button>
+                <button class="emoji" onclick="keyboardChange('keyboard3')">😀</button>
                 <div class="message-box">
                     <div id="message"></div>
                 </div>
@@ -100,6 +100,54 @@
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('8')">8</button>
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('9')">9</button>
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('0')">0</button>
+            </div>
+            <div class="kb-row-2">
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('@')">@</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('#')">#</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('€')">€</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('_')">_</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('-')">-</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('+')">+</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('=')">=</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('(')">(</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar(')')">)</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('|')">|</button>
+            </div>
+            <div class="kb-row-3">
+                <button class="special-key special-chars-button" style="text-transform:lowercase" onclick="keyboardChange('keyboard1')">abc</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('!')">!</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('?')">?</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar(':')">:</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar(';')">;</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('&quot;')">"</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('/')">/</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('*')">*</button>
+                <button class="special-key special-chars-button" style="text-transform:lowercase" onclick="keyboardChange('keyboard2')">123-?</button>
+            </div>
+            <div class="kb-row-4">
+                <button class="special-key" onclick="newChar(',')">,</button>
+                <button class="special-key" onclick="newChar('.')">.</button>
+                <button class="special-key" onclick="deleteLastChar()">&#8592;</button>
+                <button class="special-key" onclick="deleteFirstChar()">&#8594;</button>
+                <button class="special-key space" onclick="newChar(' ')"> </button>
+                <button class="special-key" onclick="deleteAllChars()">C</button>
+                <button class="special-key" onclick="deleteLastWord()">CE</button>
+                <button class="special-key" onclick="addLineBreak()">Ent</button>
+            </div>
+        </div>
+
+        <div class="keyboard" id="keyboard3" style="display:none">
+            <div class="kb-row-1">
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('😀')">😀</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('😂')">😂</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('😄')">😄</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('😅')">😅</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('😆')">😆</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('😉')">😉</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('😘')">😘</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('🙄')">🙄</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('😔')">😔</button>
+                <button class="normal-key" style="text-transform:lowercase" onclick="newChar('😭')">😭</button>
             </div>
             <div class="kb-row-2">
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('@')">@</button>
