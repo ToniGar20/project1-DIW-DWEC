@@ -71,7 +71,6 @@ function sendMessage(){
     //Building the text message
     let currentMessage = document.getElementById("message").innerHTML;
     if (currentMessage !== '') {
-            //if (currentMessage !== null)
             currentMessage = currentMessage.replace("<br>", "\n");
             let newPText = document.createTextNode(currentMessage);
             pText.appendChild(newPText);
