@@ -6,7 +6,7 @@ body {
     font-family: "Helvetica", serif;
     display: grid;
     grid-template-columns: 450px;
-    grid-template-rows: 75px 550px 200px;
+    grid-template-rows: 75px 550px 235px;
     justify-content: center;
 }
 
@@ -55,7 +55,6 @@ body {
 }
 
 .status-point {
-    display: grid;
     justify-content: left;
     width: 110%;
     height: 38%;
@@ -65,7 +64,6 @@ body {
 }
 
 .status-text {
-    display: grid;
     justify-content: left;
     align-items: center;
     margin-left: 4%;
@@ -140,7 +138,7 @@ body {
 }
 
 
-/* Message area: general box, input and button */
+/* Message area: general box, input and buttons */
 
 .message-area {
     display: flex;
@@ -192,13 +190,12 @@ body {
 
 /* Keyboard */
 
-/* TODO 7: keyboard overflows his space */
 .keyboard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: grey;
-    align-items: center;
+    background: lightslategrey;
+    padding: 10px;
 }
 
 .kb-row-1 {
@@ -222,9 +219,10 @@ body {
     display: flex;
     font-size: 15px;
     text-align: center;
-    width: 45px;
+    width: 43px;
     height: 40px;
     line-height: 0;
+    border-radius: 5px;
     padding: 19px 15px;
     background: #2A2A3A;
     color: #aaa;
@@ -238,11 +236,11 @@ body {
 
 .special-key {
     display: flex;
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
     height: 10px;
     line-height: 0;
-    /* margin: 2px; */
+    border-radius: 5px;
     padding: 20px 12px;
     background: rgb(77,182,172);
     color: black;
@@ -270,22 +268,39 @@ body {
 
 @media screen and (max-width: 360px), screen and (max-height: 640px) {
 
+    /* General layout dimensions */
     .mobile {
         display: grid;
         grid-template-columns: 360px;
-        grid-template-rows: 60px 400px 190px;
+        grid-template-rows: 60px 370px 210px;
         justify-content: initial;
     }
 
-    .normal-key{
-        width: 35px;
-        height: 35px;
-    }
+    /* Profile top bar */
+    .profile-name{ font-size: 19px; }
+    .status-point{ width: 90%; height: 30% }
+    .status-text{ font-size: 10px }
 
-    .mays-button {
-        width: 52px;
-        align-content: center;
-        justify-content: center;
+    /* Message displaying area */
+    .day{ font-size: 13px; padding: 6px }
+    .message-sent{
+        min-width: 30px;
+        max-width: 255px;
+        padding: 1px;
     }
+    .text{ font-size: 14px; }
+
+    /* Message area: general box, input and buttons */
+    .message-area { margin-bottom: 5%; margin-top: 5%; }
+    .emoji{ font-size: 20px; width: 46px; height: 38px }
+    .message-box {height: 38px}
+    .message-area .send { width: 50px; height: 38px; }
+
+    /* Keyboard */
+    .keyboard {padding: 8px;}
+    .normal-key{ width: 35px; height: 40px; padding: 16px 12px; }
+    .special-key{ font-size: 11px; padding: 19px 10px;}
+    .special-chars-button, .mays-button { width: 52px; }
+    .space { padding: 19px 55px; }
 
 }

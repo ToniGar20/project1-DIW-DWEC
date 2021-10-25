@@ -134,7 +134,7 @@ function sendMessage(){
 }
 
 function keyboardChange(keyboard){
-    if(keyboard === "keyboard1"){
+    if (keyboard === "keyboard1"){
         document.getElementById("keyboard1").style.display = "flex";
         document.getElementById("keyboard2").style.display = "none";
         document.getElementById("keyboard3").style.display = "none";
