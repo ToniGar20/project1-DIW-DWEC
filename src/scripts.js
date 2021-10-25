@@ -96,6 +96,7 @@ function sendMessage(){
         console.log(currentMessage); //This prints the line break exists!
         let newPText = document.createTextNode(currentMessage);
         pText.appendChild(newPText);
+        divMessageSent.appendChild(pText);
 
         // Stuff to makes this work!
         // let num = document.getElementsByClassName('message-sent').length
