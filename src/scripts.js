@@ -89,11 +89,18 @@ function sendMessage(){
     //Building the text message
     let currentMessage = document.getElementById("message").innerHTML;
     if (currentMessage !== '') {
-        currentMessage = currentMessage.replaceAll('<br>', `\n`);
+        while(currentMessage.includes('<br>')){
+            currentMessage = currentMessage.replace('<br>', '\n');
+        }
+        currentMessage = currentMessage.replace('<br>', `\n`);
         console.log(currentMessage); //This prints the line break exists!
         let newPText = document.createTextNode(currentMessage);
         pText.appendChild(newPText);
-        divMessageSent.appendChild(pText);
+
+        // Stuff to makes this work!
+        // let num = document.getElementsByClassName('message-sent').length
+        // let d1 = document.getElementsByClassName('message-sent')[num-1];
+        // d1.insertAdjacentHTML('afterend', `<p class="text">${currentMessage}</p>`);
 
         //Building the timestamp
         let now = new Date();
