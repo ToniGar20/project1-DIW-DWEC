@@ -127,13 +127,13 @@ body {
 
 .text {
     margin-left: 10px;
+    margin-right: -15px;
 }
 
 .timestamp {
     justify-content: flex-end;
     font-size: 60%;
-    margin-top: auto;
-    margin-left: 2%;
+    margin-top: 45px;
     margin-right: 2%;
 }
 
@@ -151,7 +151,6 @@ body {
 }
 
 .emoji {
-    display: flex;
     font-size: 28px;
     width: 60px;
     background-size: cover;
@@ -172,14 +171,12 @@ body {
 }
 
 #message {
-    display: flex;
     margin-left: 5%;
     margin-right: 5%;
     flex-wrap: wrap;
 }
 
 .message-area .send {
-    display: flex;
     background: url(images/send-triangle.png) no-repeat;
     background-size: cover;
     width: 62px;
@@ -216,7 +213,6 @@ body {
 }
 
 .normal-key {
-    display: flex;
     font-size: 15px;
     text-align: center;
     width: 43px;
@@ -235,7 +231,6 @@ body {
 }
 
 .special-key {
-    display: flex;
     font-size: 13px;
     text-align: center;
     height: 10px;
@@ -249,8 +244,6 @@ body {
 }
 
 .space {
-    display: flex;
-    flex-grow: 1;
     padding: 20px 75px;
 }
 
@@ -288,7 +281,7 @@ body {
         max-width: 255px;
         padding: 1px;
     }
-    .text{ font-size: 14px; }
+    .text{ font-size: 13px; }
 
     /* Message area: general box, input and buttons */
     .message-area { margin-bottom: 5%; margin-top: 5%; }
@@ -302,5 +295,4 @@ body {
     .special-key{ font-size: 11px; padding: 19px 10px;}
     .special-chars-button, .mays-button { width: 52px; }
     .space { padding: 19px 55px; }
-
 }
