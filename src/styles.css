@@ -105,7 +105,7 @@ body {
     font-family: "Roboto", sans-serif;;
     background-color: #FFE4B5;
     padding: 8px;
-    margin-top: 3%;
+    margin-top: 30px;
     border-radius: 10px;
 }
 
@@ -133,8 +133,8 @@ body {
 .timestamp {
     justify-content: flex-end;
     font-size: 60%;
-    margin-top: 45px;
-    margin-right: 2%;
+    margin-top: 40px;
+    margin-right: 5px;
 }
 
 
@@ -219,7 +219,7 @@ body {
     height: 40px;
     line-height: 0;
     border-radius: 5px;
-    padding: 19px 15px;
+    padding: 19px 11px;
     background: #2A2A3A;
     color: #aaa;
     box-shadow: 0px 5px 0px 0em black;
@@ -270,29 +270,30 @@ body {
     }
 
     /* Profile top bar */
-    .profile-name{ font-size: 19px; }
-    .status-point{ width: 90%; height: 30% }
-    .status-text{ font-size: 10px }
+    .profile-name { font-size: 19px; }
+    .status-point { width: 90%; height: 30% }
+    .status-text { font-size: 10px }
 
     /* Message displaying area */
-    .day{ font-size: 13px; padding: 6px }
-    .message-sent{
+    .day { font-size: 13px; padding: 6px; margin-top: 25px; }
+    .message-sent {
         min-width: 30px;
         max-width: 255px;
         padding: 1px;
     }
-    .text{ font-size: 13px; }
+    .text { font-size: 13px; }
+    .timestamp { margin-top: 33px; }
 
     /* Message area: general box, input and buttons */
     .message-area { margin-bottom: 5%; margin-top: 5%; }
-    .emoji{ font-size: 20px; width: 46px; height: 38px }
+    .emoji { font-size: 20px; width: 46px; height: 38px }
     .message-box {height: 38px}
     .message-area .send { width: 50px; height: 38px; }
 
     /* Keyboard */
     .keyboard {padding: 8px;}
-    .normal-key{ width: 35px; height: 40px; padding: 16px 12px; }
-    .special-key{ font-size: 11px; padding: 19px 10px;}
+    .normal-key { width: 35px; height: 40px; padding: 16px 6px; }
+    .special-key { font-size: 11px; padding: 19px 10px;}
     .special-chars-button, .mays-button { width: 52px; }
     .space { padding: 19px 55px; }
 }

@@ -74,7 +74,7 @@ function deleteAllChars(){
 }
 
 function addLineBreak(){
-    document.getElementById("message").innerHTML += `</br>`;
+    document.getElementById("message").innerHTML += '<br>';
 }
 
 function sendMessage(){
@@ -89,7 +89,8 @@ function sendMessage(){
     //Building the text message
     let currentMessage = document.getElementById("message").innerHTML;
     if (currentMessage !== '') {
-        currentMessage = currentMessage.replaceAll("<br>", "\n");
+        currentMessage = currentMessage.replaceAll('<br>', `\n`);
+        console.log(currentMessage); //This prints the line break exists!
         let newPText = document.createTextNode(currentMessage);
         pText.appendChild(newPText);
         divMessageSent.appendChild(pText);
@@ -111,8 +112,6 @@ function sendMessage(){
         const months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
         let dateNow = now.getDate() + " de " + months[now.getMonth()];
         let datesDisplayed = document.getElementsByClassName("day");
-        console.log(dateNow);
-        console.log(datesDisplayed);
 
         if(datesDisplayed[datesDisplayed.length-1].innerText !== dateNow){
             let newDate = document.createTextNode(dateNow);
