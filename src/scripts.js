@@ -89,36 +89,47 @@ function sendMessage(){
     //Building the text message
     let currentMessage = document.getElementById("message").innerHTML;
     if (currentMessage !== '') {
-            currentMessage = currentMessage.replaceAll("<br>", "\n");
-            let newPText = document.createTextNode(currentMessage);
-            pText.appendChild(newPText);
-            divMessageSent.appendChild(pText);
+        currentMessage = currentMessage.replaceAll("<br>", "\n");
+        let newPText = document.createTextNode(currentMessage);
+        pText.appendChild(newPText);
+        divMessageSent.appendChild(pText);
 
-            //Building the timestamp
-            let now = new Date();
-            let minutesFixed;
-            if(now.getMinutes() >= 0 && now.getMinutes() <= 9){
-                minutesFixed = "0" + now.getMinutes();
+        //Building the timestamp
+        let now = new Date();
+        let minutesFixed;
+        if(now.getMinutes() >= 0 && now.getMinutes() <= 9){
+            minutesFixed = "0" + now.getMinutes();
             } else{
-                minutesFixed = now.getMinutes();
-            }
-            let timeNow = now.getHours() + ":" + minutesFixed;
-            let newTimeNow = document.createTextNode(timeNow);
-            pTimestamp.appendChild(newTimeNow);
-            divMessageSent.appendChild(pTimestamp);
+            minutesFixed = now.getMinutes();
+        }
+        let timeNow = now.getHours() + ":" + minutesFixed;
+        let newTimeNow = document.createTextNode(timeNow);
+        pTimestamp.appendChild(newTimeNow);
+        divMessageSent.appendChild(pTimestamp);
 
-            //TODO 4: Conditional required: just draw the day once.
-            //Building the day of send
-            const months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
-            let dateNow = now.getDate() + " de " + months[now.getMonth()];
-            console.log(dateNow);
+        //Building the day of send just if it doesn't exists!
+        const months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+        let dateNow = now.getDate() + " de " + months[now.getMonth()];
+        let datesDisplayed = document.getElementsByClassName("day");
+        console.log(dateNow);
+        console.log(datesDisplayed);
 
-            //TODO 5: Send the content to he HTML
-            //Building DOM order for elements
-            document.getElementById("text-content").appendChild(divMessageSent);
+        if(datesDisplayed[datesDisplayed.length-1].innerText !== dateNow){
+            let newDate = document.createTextNode(dateNow);
+            let divForDate = document.createElement("div");
+            divForDate.classList.add("day");
+            divForDate.appendChild(newDate);
+            let divForDayBox = document.createElement("div");
+            divForDayBox.classList.add("day-box");
+            divForDayBox.appendChild(divForDate);
+            document.getElementById("text-content").appendChild(divForDayBox);
+        }
 
-            //Cleaning the input after sending message
-            document.getElementById("message").innerHTML = "";
+        //Building DOM order for elements
+        document.getElementById("text-content").appendChild(divMessageSent);
+
+        //Cleaning the input after sending message
+        document.getElementById("message").innerHTML = "";
     }
 }
 
