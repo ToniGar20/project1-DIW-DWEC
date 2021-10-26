@@ -125,7 +125,7 @@ body {
     margin: 7px;
 }
 
-.message-recieved {
+.message-received {
     display: flex;
     flex: 0;
     flex-direction: row;
@@ -294,14 +294,13 @@ body {
     .status-text { font-size: 10px }
 
     /* Message displaying area */
-    .message-recieved { margin-right: 120px; margin-left: 5px; }
+    .message-received { margin-right: 120px; margin-left: 5px; }
     .day { font-size: 13px; padding: 6px; margin-top: 25px; }
     .message-sent {
         min-width: 30px;
         max-width: 255px;
         padding: 1px;
-        margin: 3px;
-        margin-right: 5px;
+        margin: 3px 5px 2px 3px;
     }
     .text { font-size: 13px; }
     .timestamp { margin-top: 33px; }
