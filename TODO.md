@@ -19,8 +19,6 @@ Ech row describes a requirement or an extra feature for the application. Differe
 
 
 - [X] KEYB - Display the common characters and functions
-  - [x] Keyboard for alphabetic characters
-  - [x] Keyboard for special characters
 
 
 - [X] EMOJI - When clicking on the button of GIF/Emoji, emojis can be sent
@@ -29,6 +27,19 @@ Ech row describes a requirement or an extra feature for the application. Differe
 
 
 #### 1.1 Special Keys
+- [x] CEC - "C" key deletes text from text area. "CE" key deletes the last word
+
+
+- [x] DELET - "Left row" key deletes last character. "Right row" key deletes first character
+
+
+- [x] MAJUS - Majus button: 1 characters or perma majus. Desactivacion with 1 clic on the key. With visual effect.
+
+
+- [x] ESPAI - Space key and space displayed in the message
+
+
+- [x] SALT - Line jump
 
 
 ### 2. CSS and visual requirements
@@ -73,3 +84,8 @@ Ech row describes a requirement or an extra feature for the application. Differe
 
 
 - [x] ALTRES - Other functionalities added to the project
+  - [x] A
+  - [x] B
+  - [x] C
+  - [x] D
+  - [x] E
