@@ -80,12 +80,10 @@ Ech row describes a requirement or an extra feature for the application. Differe
 - [x] EMOJ - Emojis sent within text messages
 
 
-- [x] PENJA - Use Netlify for project deployment
+- [ ] PENJA - Use Netlify for project deployment
 
 
 - [x] ALTRES - Other functionalities added to the project
-  - [x] A
-  - [x] B
-  - [x] C
-  - [x] D
-  - [x] E
+  - [x] Top profile bar
+  - [x] Message default display
+  - [x] Two different keyboards: alphabetic & special characters
