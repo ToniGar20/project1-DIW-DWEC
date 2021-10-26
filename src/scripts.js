@@ -1,7 +1,7 @@
 let upperCase = false;
 let typeOfClick;
 
-function toUpperCaseButton(value){
+function toUpperCaseButton(value) {
     upperCase = !upperCase; //If variable-value is false, set to false and viceversa
     value === "single" ? typeOfClick = "single" : typeOfClick = "double";
 
@@ -22,62 +22,62 @@ function toUpperCaseButton(value){
     return typeOfClick;
 }
 
-function newChar(value){
+function newChar(value) {
     if (upperCase) {
         value = value.toUpperCase();
         document.getElementById("message").innerHTML += value;
-        if (typeOfClick === "single"){
+        if (typeOfClick === "single") {
             document.getElementById("case-button").style.backgroundColor = "rgb(77,182,172)";
             let allChars = document.getElementsByClassName("normal-key");
-            for (let i = 0; i < allChars.length; i++){
+            for (let i = 0; i < allChars.length; i++) {
                 allChars[i].style.textTransform = 'lowercase';
             }
             upperCase = false;
         } else {
             upperCase = true;
         }
-    } else{
+    } else {
         document.getElementById("message").innerHTML += value;
     }
     return upperCase;
 }
 
-function deleteFirstChar(){
+function deleteFirstChar() {
     let currentMessageValue = document.getElementById("message").innerHTML;
-    if (currentMessageValue.length >= 1){
+    if (currentMessageValue.length >= 1) {
         let newChain = currentMessageValue.split("");
         newChain.shift();
         document.getElementById("message").innerHTML = newChain.join("");
     }
 }
 
-function deleteLastChar(){
+function deleteLastChar() {
     let currentMessageValue = document.getElementById("message").innerHTML;
-    if (currentMessageValue.length >= 1){
+    if (currentMessageValue.length >= 1) {
         let newChain = currentMessageValue.split("");
         newChain.pop();
         document.getElementById("message").innerHTML = newChain.join("");
     }
 }
 
-function deleteLastWord(){
+function deleteLastWord() {
     let currentMessageValue = document.getElementById("message").innerHTML;
-    if (currentMessageValue.length >= 1){
+    if (currentMessageValue.length >= 1) {
         let newChain = currentMessageValue.split(" ");
         newChain.pop();
         document.getElementById("message").innerHTML = newChain.join(" ");
     }
 }
 
-function deleteAllChars(){
+function deleteAllChars() {
     document.getElementById("message").innerHTML = "";
 }
 
-function addLineBreak(){
+function addLineBreak() {
     document.getElementById("message").innerHTML += '<br>';
 }
 
-function sendMessage(){
+function sendMessage() {
     //Creating main containers and elements for HTML
     let divMessageSent = document.createElement("div");
     divMessageSent.classList.add("message-sent");
@@ -89,7 +89,7 @@ function sendMessage(){
     //Building the text message
     let currentMessage = document.getElementById("message").innerHTML;
     if (currentMessage !== '') {
-        while(currentMessage.includes('<br>')){
+        while(currentMessage.includes('<br>')) {
             currentMessage = currentMessage.replace('<br>', '\n');
         }
         currentMessage = currentMessage.replace('<br>', `\n`);
@@ -106,9 +106,9 @@ function sendMessage(){
         //Building the timestamp
         let now = new Date();
         let minutesFixed;
-        if(now.getMinutes() >= 0 && now.getMinutes() <= 9){
+        if(now.getMinutes() >= 0 && now.getMinutes() <= 9) {
             minutesFixed = "0" + now.getMinutes();
-            } else{
+            } else {
             minutesFixed = now.getMinutes();
         }
         let timeNow = now.getHours() + ":" + minutesFixed;
@@ -117,11 +117,11 @@ function sendMessage(){
         divMessageSent.appendChild(pTimestamp);
 
         //Building the day of send just if it doesn't exists!
-        const months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
-        let dateNow = now.getDate() + " de " + months[now.getMonth()];
+        const MONTHS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+        let dateNow = now.getDate() + " de " + MONTHS[now.getMonth()];
         let datesDisplayed = document.getElementsByClassName("day");
 
-        if(datesDisplayed[datesDisplayed.length-1].innerText !== dateNow){
+        if(datesDisplayed[datesDisplayed.length-1].innerText !== dateNow) {
             let newDate = document.createTextNode(dateNow);
             let divForDate = document.createElement("div");
             divForDate.classList.add("day");
@@ -140,16 +140,16 @@ function sendMessage(){
     }
 }
 
-function keyboardChange(keyboard){
-    if (keyboard === "keyboard1"){
+function keyboardChange(keyboard) {
+    if (keyboard === "keyboard1") {
         document.getElementById("keyboard1").style.display = "flex";
         document.getElementById("keyboard2").style.display = "none";
         document.getElementById("keyboard3").style.display = "none";
-    } else if (keyboard === "keyboard2"){
+    } else if (keyboard === "keyboard2") {
         document.getElementById("keyboard1").style.display = "none";
         document.getElementById("keyboard2").style.display = "flex";
         document.getElementById("keyboard3").style.display = "none";
-    } else if (keyboard === "keyboard3"){
+    } else if (keyboard === "keyboard3") {
         document.getElementById("keyboard1").style.display = "none";
         document.getElementById("keyboard2").style.display = "none";
         document.getElementById("keyboard3").style.display = "flex";
