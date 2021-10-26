@@ -294,7 +294,7 @@ body {
 
     /* Message displaying area */
     .display-box{ background-size: 360px; }
-    .message-received { margin-right: 120px; margin-left: 5px; }
+    .message-received { margin-right: 120px; margin-left: 4px; }
     .day { font-size: 13px; padding: 6px; margin-top: 25px; }
     .message-sent {
         min-width: 30px;
