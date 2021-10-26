@@ -310,6 +310,7 @@ body {
     .message-area { margin-bottom: 5%; margin-top: 5%; }
     .emoji { font-size: 20px; width: 46px; height: 38px }
     .message-box {height: 38px}
+    #message { font-size: 13px; }
     .message-area .send { width: 50px; height: 38px; }
 
     /* Keyboard */
