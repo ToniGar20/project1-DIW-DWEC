@@ -27,14 +27,14 @@ At repository homepage there are the .gitignore, TODO.md and this READ.md files.
 
 Next, there a list of resolutions and difficulties found throughout the development process:
 
-###Highlights & Good Learnings
+### Highlights & Good Learnings
 * **Keyboards**: was funny to work with different keyboards playing with his visibility in order to show the one required.
 * **Status top bar**: inspired on "Whatsapp", I've added a top bar with myself, including name, photo and status (online always).
 * **Default message displayed**: with the objective to simulate a real conversation, I've added a default text asking you about my application.
 * **Default margins**: I got crazy trying to understand why the responsive version drew some margins. Solved it with whole document property (*) margin: 0;
 * **Property "word-break""**: the best CSS property I've discovered at the project !
 
-###Lowlights & Difficulties
+### Lowlights & Difficulties
 * **Not working with _textarea_ or _inputs_ at message writing box**: I've done it with a "\<div>" element, and it was a waste of time since I had to spend many hours with line break functionality. JS function "createTextNode" was deleting \<br> injected on .innerHTML, so I had to find another way. The way was to save the \<br> and send it at the end, before the message labels are already at the DOM.
 * **Permanent UpperCase Button**: now works well but was the main challenge since the JS is so modular. Got to solve it with conditionals and variables for storing different status depending on a click, a double click or a non-click at the button.
 * **"px" as main CSS measure**: difficulties in applying relative measures. It has involved detailing all the key measures in the media query.
