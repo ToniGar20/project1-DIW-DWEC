@@ -1,3 +1,9 @@
+/**
+ * 10 functions defined for different events on the HTML
+ */
+
+
+//Variables to control upperCase button while new characters are typed with the keyboard
 let upperCase = false;
 let typeOfClick;
 
