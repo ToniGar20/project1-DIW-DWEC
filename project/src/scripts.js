@@ -78,7 +78,7 @@ function addLineBreak() {
 }
 
 function sendMessage() {
-    //Creating main containers and elements for HTML
+    //Creating main containers and elements for HTML. Note: I don't build a TextNode for now
     let divMessageSent = document.createElement("div");
     divMessageSent.classList.add("message-sent");
     let pText = document.createElement("p");
@@ -89,24 +89,12 @@ function sendMessage() {
     //Building the text message
     let currentMessage = document.getElementById("message").innerHTML;
     if (currentMessage !== '') {
-        while(currentMessage.includes('<br>')) {
-            currentMessage = currentMessage.replace('<br>', '\n');
-        }
-        currentMessage = currentMessage.replace('<br>', `\n`);
-        console.log(currentMessage); //This prints the line break exists!
-        let newPText = document.createTextNode(currentMessage);
-        pText.appendChild(newPText);
         divMessageSent.appendChild(pText);
 
-        // Stuff to makes this work!
-        // let num = document.getElementsByClassName('message-sent').length
-        // let d1 = document.getElementsByClassName('message-sent')[num-1];
-        // d1.insertAdjacentHTML('afterend', `<p class="text">${currentMessage}</p>`);
-
-        //Building the timestamp
+        //Building the timestamp in the messages
         let now = new Date();
         let minutesFixed;
-        if(now.getMinutes() >= 0 && now.getMinutes() <= 9) {
+        if(now.getMinutes() >= 0 && now.getMinutes() <= 9) { //Conditional to display correctly HH:0M format!
             minutesFixed = "0" + now.getMinutes();
             } else {
             minutesFixed = now.getMinutes();
@@ -132,10 +120,14 @@ function sendMessage() {
             document.getElementById("text-content").appendChild(divForDayBox);
         }
 
-        //Building DOM order for elements
+        //Sending to the DOM all the elements with text
         document.getElementById("text-content").appendChild(divMessageSent);
 
-        //Cleaning the input after sending message
+        //Sending the text to the DOM element. Reason to do it separately at README
+        let num = document.getElementsByClassName("text").length;
+        document.getElementsByClassName("text")[num-1].innerHTML = currentMessage;
+
+        //Cleaning the input text after sending message
         document.getElementById("message").innerHTML = "";
     }
 }
