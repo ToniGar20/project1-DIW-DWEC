@@ -1,13 +1,14 @@
 # Whatsagram - Project 1 for DIW-DWEC
 
-Desarrollo de aplicación de mensajería local en el que mediante un teclado se pueden enviar diferentes mensajes a un "text-area".
+Development of a local messaging application in which different messages can be sent to a "text-area" using "onclick" events of a keyboard.
 
-Tanto la interfaz como las funcionalidades mínimas requeridas son similares a las aplicaciones Whatsapp o Telegram.
+Both the interface and the minimum required functionalities are similar to the WhatsApp or Telegram applications.
 
-Preview:
+* [TODO list dedicated document](https://github.com/ToniGar20/project1-DIW-DWEC/blob/master/TODO.md)
+* Preview:
 ![Whatsagram by Toni García](/misc/whatsagram-gif-toni.gif)
 
-Todo list dedicated document
+
 
 ## Content of the project
 
