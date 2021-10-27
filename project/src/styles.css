@@ -275,7 +275,21 @@ body {
     background:yellowgreen;
 }
 
-/* MEDIA QUERIES */ /* MADE FOR GALAXY S5 */
+/* MEDIA QUERIES */
+
+/* FOR GENERAL RESPONSIVE DISPLAY */
+
+@media screen and (max-width: 404px), screen and (max-height: 774px) {
+
+    .mobile {
+        grid-template-columns: 404px;
+        grid-template-rows: 60px 370px 210px;
+        justify-content: initial;
+    }
+
+}
+
+/* FOR GALAXY S5 */
 
 @media screen and (max-width: 360px), screen and (max-height: 640px) {
 
