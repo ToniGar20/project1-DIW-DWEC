@@ -12,7 +12,7 @@ Both the interface and the minimum required functionalities are similar to the W
   * [2. Description of project's content](https://github.com/ToniGar20/project1-DIW-DWEC#2-description-of-projects-content)
   * [3. Highlights and lowlights of development process](https://github.com/ToniGar20/project1-DIW-DWEC#3-highlights-and-lowlights-of-development-process)
   * [4. Deployment](https://github.com/ToniGar20/project1-DIW-DWEC#4-deployment)
-  * [5. Tools and resources]((https://github.com/ToniGar20/project1-DIW-DWEC#5-tools-and-resources))
+  * [5. Tools and resources](https://github.com/ToniGar20/project1-DIW-DWEC#5-tools-and-resources)
 
 ## 1. Preview
 ![Whatsagram by Toni García](/misc/whatsagram-gif-toni.gif)
