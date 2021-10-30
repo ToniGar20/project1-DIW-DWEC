@@ -10,7 +10,7 @@
 
 <body>
     <div class="mobile">
-        <div class="profile-box">
+        <header class="profile-box">
             <div class="profile-image">
                 <img src="src/images/profile-img.png" alt="ToniGarcia"/>
             </div>
@@ -21,8 +21,8 @@
                     <div class="status-text">En línea</div>
                 </div>
             </div>
-        </div>
-        <div class="display-box">
+        </header>
+        <main class="display-box">
             <div class="text-area" id="text-content">
                 <div class="day-box">
                     <div class="day">25 de octubre</div>
@@ -39,8 +39,8 @@
                 </div>
                 <button class="send" onclick="sendMessage()"></button>
             </div>
-        </div>
-        <div class="keyboard" id="keyboard1" style="display:flex">
+        </main>
+        <section class="keyboard" id="keyboard1" style="display:flex">
             <div class="kb-row-1">
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('q')">q</button>
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('w')">w</button>
@@ -86,9 +86,9 @@
                 <button class="special-key" onclick="deleteLastWord()">CE</button>
                 <button class="special-key" onclick="addLineBreak()"><b>&#8626;</b></button>
             </div>
-        </div>
+        </section>
 
-        <div class="keyboard" id="keyboard2" style="display:none">
+        <section class="keyboard" id="keyboard2" style="display:none">
             <div class="kb-row-1">
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('1')">1</button>
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('2')">2</button>
@@ -134,9 +134,9 @@
                 <button class="special-key" onclick="deleteLastWord()">CE</button>
                 <button class="special-key" onclick="addLineBreak()"><b>&#8626;</b></button>
             </div>
-        </div>
+        </section>
 
-        <div class="keyboard" id="keyboard3" style="display:none">
+        <section class="keyboard" id="keyboard3" style="display:none">
             <div class="kb-row-1">
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('😀')">😀</button>
                 <button class="normal-key" style="text-transform:lowercase" onclick="newChar('😂')">😂</button>
@@ -182,7 +182,7 @@
                 <button class="special-key" onclick="deleteLastWord()">CE</button>
                 <button class="special-key" onclick="addLineBreak()"><b>&#8626;</b></button>
             </div>
-        </div>
+        </section>
     </div>
 
 </body>
