@@ -67,7 +67,7 @@ Ech row describes a requirement or an extra feature for the application. Differe
 - [ ] VARS - Using variables for CSS colors
 
 
-- [ ] STYLE - [DIW guide](https://docs.google.com/document/d/1XgEweoKsHu3U7dW0ieL5uvmHPCljXzoBcc3HAqEd9Ms) followed
+- [x] STYLE - [DIW guide](https://docs.google.com/document/d/1XgEweoKsHu3U7dW0ieL5uvmHPCljXzoBcc3HAqEd9Ms) followed
 
 
 - [ ] CORRE - [DWEC guide](https://docs.google.com/document/d/14XmBU8qXZmJogA8R4YJPTjL-tCHOjUC3AL2Crt5XUEo) followed
