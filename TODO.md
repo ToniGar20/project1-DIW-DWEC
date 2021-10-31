@@ -86,4 +86,5 @@ Ech row describes a requirement or an extra feature for the application. Differe
 - [x] ALTRES - Other functionalities added to the project
   - [x] Top profile bar
   - [x] Message default display
-  - [x] Two different keyboards: alphabetic & special characters
+  - [x] Automatic top scroll to just display the last messages
+  - [x] Three different keyboards: alphabetic, special characters & emojis
