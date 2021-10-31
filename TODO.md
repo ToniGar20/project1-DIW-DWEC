@@ -64,7 +64,7 @@ Ech row describes a requirement or an extra feature for the application. Differe
 
 ### 3. Technical requirements
 
-- [ ] VARS - Using variables for CSS colors
+- [x] VARS - Using variables for CSS colors
 
 
 - [x] STYLE - [DIW guide](https://docs.google.com/document/d/1XgEweoKsHu3U7dW0ieL5uvmHPCljXzoBcc3HAqEd9Ms) followed
