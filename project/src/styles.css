@@ -3,7 +3,7 @@ body {
 }
 
 .mobile {
-    font-family: "Helvetica", serif;
+    font-family: 'Lato', sans-serif;
     display: grid;
     grid-template-columns: 450px;
     grid-template-rows: 75px 550px 235px;
