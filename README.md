@@ -23,14 +23,20 @@ At repository homepage there are the .gitignore, TODO.md and this READ.md files.
 
 "project" directory have an "index.html" as main. "src" contains CSS and JS files in addition to "images" folder, with all the items that are used for "Whatsagram".
 
-Other details are the ones following:
- * Google Font used: [Lato Regular 400]("https://fonts.google.com/specimen/Lato")
- * CSS Variables for colors
- * Just responsive version for Galaxy S5
+The main lines of the project are the following:
+
+* HTML semantic markup
+* External CSS and JS
+* Some styles at HTML for displaying of colors and/or visibility
+* JS called with onclick events
+* Google Font used: [Lato Regular 400]("https://fonts.google.com/specimen/Lato")
+* CSS Variables for colors
+* Responsive version just for Galaxy S5
+* Extra functionalities (check last section of [TODO list](https://github.com/ToniGar20/project1-DIW-DWEC/blob/master/TODO.md))
 
 ## 3. Highlights and lowlights of development process
 
-Next, there a list of resolutions and difficulties found throughout the development process:
+Next, there is a list of resolutions and difficulties found throughout the development process:
 
 ### Highlights & Good Learnings
 * **Keyboards**: was funny to work with different keyboards playing with his visibility in order to show the one required.
@@ -41,7 +47,7 @@ Next, there a list of resolutions and difficulties found throughout the developm
 
 ### Lowlights & Difficulties
 * **Not working with _textarea_ or _inputs_ at message writing box**: I've done it with a "\<div>" element, and it was a waste of time since I had to spend many hours with line break functionality. JS function "createTextNode" was deleting \<br> injected on .innerHTML, so I had to find another way. The way was to save the \<br> and send it at the end, before the message labels are already at the DOM.
-* **Permanent UpperCase Button**: now works well but was the main challenge since the JS is so modular. Got to solve it with conditionals and variables for storing different status depending on a click, a double click or a non-click at the button.
+* **Permanent UpperCase Button**: works well but was the main challenge since the JS is so modular. Got to solve it with conditionals and variables for storing different status depending on a click, a double click or a non-click at the button.
 * **"px" as main CSS measure**: difficulties in applying relative measures. It has involved detailing all the key measures in the media query.
 
 ## 4. Deployment
