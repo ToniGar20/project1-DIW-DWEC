@@ -2,6 +2,22 @@ body {
     margin: 0;
 }
 
+/* Variables to display colors */
+:root{
+    --special-key-bcolor: rgb(77,182,172);
+    --normal-key-bcolor: #2A2A3A;
+    --top-bar-bcolor: #005e54;
+    --profile-point: lawngreen;
+    --day-box-bcolor: #FFE4B5;
+    --message-recieved-bcolor: lightblue;
+    --message-sent-bcolor: lightgreen;
+    --white-color: white;
+    --onhover-color: orange;
+    --keyboard-background: lightslategrey;
+    --main-black: black;
+}
+
+
 .mobile {
     font-family: 'Lato', sans-serif;
     display: grid;
@@ -16,7 +32,7 @@ body {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 1fr;
-    background: #005e54;
+    background: var(--top-bar-bcolor);
     color: #fff;
     padding: 0 8px;
     font-size: 24px;
@@ -59,7 +75,7 @@ body {
     width: 110%;
     height: 38%;
     border-radius: 60%;
-    background: lawngreen;
+    background: var( --profile-point);
 
 }
 
@@ -103,7 +119,7 @@ body {
 
 .day{
     font-family: "Roboto", sans-serif;;
-    background-color: #FFE4B5;
+    background-color: var(--day-box-bcolor);
     padding: 8px;
     margin-top: 30px;
     border-radius: 10px;
@@ -114,7 +130,7 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-content: center;
-    background-color: lightgreen;
+    background-color: var(--message-sent-bcolor);
     border-top-left-radius: 15px 20px;
     border-bottom-left-radius: 15px 20px;
     border-bottom-right-radius: 15px 20px;
@@ -131,7 +147,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: center;
-    background-color: lightblue;
+    background-color: var(--message-recieved-bcolor);
     border-top-right-radius: 15px 20px;
     border-bottom-left-radius: 15px 20px;
     border-bottom-right-radius: 15px 20px;
@@ -172,7 +188,7 @@ body {
     font-size: 28px;
     width: 60px;
     background-size: cover;
-    background-color: rgb(77,182,172);
+    background-color: var(--special-key-bcolor);
     border-radius: 60%;
     cursor: pointer;
     margin-right: 3%;
@@ -180,7 +196,7 @@ body {
 
 .message-box {
     display: flex;
-    background-color: white;
+    background-color: var(--white-color);
     justify-content: left;
     width: 100%;
     align-items: center;
@@ -209,7 +225,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: lightslategrey;
+    background: var(--keyboard-background);
     padding: 10px;
 }
 
@@ -238,14 +254,14 @@ body {
     line-height: 0;
     border-radius: 5px;
     padding: 19px 11px;
-    background: #2A2A3A;
-    color: #aaa;
-    box-shadow: 0 5px 0 0 black;
+    background: var(--normal-key-bcolor);
+    color: var(--white-color);
+    box-shadow: 0 5px 0 0 var(--main-black);
     cursor: pointer;
 }
 
-.normal-key:hover{
-    background:mediumseagreen;
+.normal-key:hover, .special-key:hover{
+    background: var(--onhover-color);
 }
 
 .special-key {
@@ -255,9 +271,9 @@ body {
     line-height: 0;
     border-radius: 5px;
     padding: 20px 12px;
-    background: rgb(77,182,172);
-    color: black;
-    box-shadow: 0 3px 0 0 black;
+    background: var(--special-key-bcolor);
+    color: var(--main-black);
+    box-shadow: 0 3px 0 0 var(--main-black);
     cursor: pointer;
 }
 
@@ -271,13 +287,7 @@ body {
     justify-content: center;
 }
 
-.special-key:hover{
-    background:yellowgreen;
-}
-
-/* MEDIA QUERIES */
-
-/* FOR GALAXY S5 */
+/* MEDIA QUERY */ /* FOR GALAXY S5 */
 
 @media screen and (max-width: 360px), screen and (max-height: 640px) {
 
