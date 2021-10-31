@@ -56,7 +56,7 @@ Ech row describes a requirement or an extra feature for the application. Differe
 - [x] CENTR - View centered on the viewport
 
 
-- [ ] KEYS - Create visual effects on the buttons of the calculator: change appearance of the buttons on hover and when clicking/activating on a button
+- [x] KEYS - Create visual effects on the buttons: change appearance of the buttons on hover and when clicking/activating on a button
 
 
 - [ ] FONTS - Select one suitable Google Font and specify it in the README
@@ -70,7 +70,7 @@ Ech row describes a requirement or an extra feature for the application. Differe
 - [x] STYLE - [DIW guide](https://docs.google.com/document/d/1XgEweoKsHu3U7dW0ieL5uvmHPCljXzoBcc3HAqEd9Ms) followed
 
 
-- [ ] CORRE - [DWEC guide](https://docs.google.com/document/d/14XmBU8qXZmJogA8R4YJPTjL-tCHOjUC3AL2Crt5XUEo) followed
+- [x] CORRE - [DWEC guide](https://docs.google.com/document/d/14XmBU8qXZmJogA8R4YJPTjL-tCHOjUC3AL2Crt5XUEo) followed
 
 
 - [x] SEPAR - JS in script.js file
