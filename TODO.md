@@ -59,7 +59,7 @@ Ech row describes a requirement or an extra feature for the application. Differe
 - [x] KEYS - Create visual effects on the buttons: change appearance of the buttons on hover and when clicking/activating on a button
 
 
-- [ ] FONTS - Select one suitable Google Font and specify it in the README
+- [x] FONTS - Select one suitable Google Font and specify it in the README
 
 
 ### 3. Technical requirements
