@@ -275,7 +275,11 @@ body {
     background:yellowgreen;
 }
 
-/* MEDIA QUERIES */ /* MADE FOR GALAXY S5 */
+/* MEDIA QUERIES */
+
+/* FOR GENERAL RESPONSIVE DISPLAY */
+
+/* FOR GALAXY S5 */
 
 @media screen and (max-width: 360px), screen and (max-height: 640px) {
 
