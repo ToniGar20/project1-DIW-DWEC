@@ -15,7 +15,7 @@ Both the interface and the minimum required functionalities are similar to the W
   * [5. Tools and resources](https://github.com/ToniGar20/project1-DIW-DWEC#5-tools-and-resources)
 
 ## 1. Preview
-![Whatsagram by Toni García](/misc/whatsagram-gif-toni.gif)
+![Whatsagram by Toni García](/misc/whatsagram-gif-toni-gar.gif)
 
 
 ## 2. Description of project's content
