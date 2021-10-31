@@ -23,6 +23,11 @@ At repository homepage there are the .gitignore, TODO.md and this READ.md files.
 
 "project" directory have an "index.html" as main. "src" contains CSS and JS files in addition to "images" folder, with all the items that are used for "Whatsagram".
 
+Other details are the ones following:
+ * Google Font used: [Lato Regular 400]("https://fonts.google.com/specimen/Lato")
+ * CSS Variables for colors
+ * Just responsive version for Galaxy S5
+
 ## 3. Highlights and lowlights of development process
 
 Next, there a list of resolutions and difficulties found throughout the development process:
