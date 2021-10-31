@@ -52,15 +52,17 @@ Next, there is a list of resolutions and difficulties found throughout the devel
 
 ## 4. Deployment
 
-WIP
+Continous deployment at https://whatsagram-toni-garcia.netlify.app/.
+
+Currently at version 1.0
 
 ## 5. Tools and resources
 
-###Tools
+### Tools
 * IntelIJ IDE
 * [ScreenToGif](https://www.screentogif.com/) desktop application
 
-###Resources
+### Resources
 * [Netlify](https://www.netlify.com/)
 * [Github checkboxes](https://www.w3schools.io/file/markdown-checkbox-github/)
 * [README template by Vilanuevand](https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a)
